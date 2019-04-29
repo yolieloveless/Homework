@@ -1,9 +1,9 @@
 // constants
 
 var lookup = {
-    '1': 'pink',
+    '1': 'yellow',
     '-1': 'blue',
-    'null': 'lime'
+    'null': 'gray'
   };
   
   var winningCombos = [
