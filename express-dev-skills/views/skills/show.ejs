@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Here's a Particular Skill</title>
+</head>
+<body>
+    <h2><%= skill.desc %></h2>
+
+    <form action="/skills/<%= skill.id %>?_method=DELETE" method="POST">
+        <button type="submit">Delete this Skill</button>
+    </form>
+
+    <a href="/skills/<%= skill.id %>/edit">
+        <p>Edit This Skill</p>
+    </a>
+
+    <a href="/skills">
+        <p>Back to All Skills</p>
+    </a>
+
+
+    <a href="/">
+        <p>Back Home</p>
+    </a>
+</body>
+</html>

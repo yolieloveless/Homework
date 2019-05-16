@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Update Skill</title>
+</head>
+<body>
+    <h1>Update Skill</h1>
+    <form action="/skills/<%= skill.id %>?_method=PUT" method="POST" autocomplete="off">
+        <input type="hidden" name="id" value="<%= skill.id %>">
+        <input type="text" name="desc" value="<%= skill.desc %>">
+        <button type="submit">Update Skill</button>
+    </form>
+</body>
+</html>
